@@ -1,0 +1,34 @@
+{
+  "name": "jincon/Aiiphp2",
+  "description": "A Simple & Fast PHP Framework based on Composer!",
+  "keywords": ["tiny", "simple","fast", "framework", "php"],
+  "license": "MIT",
+  "homepage": "http://www.jincon.com",
+  "require": {
+      "php": ">=5.4.0",
+      "tinylara/tinyrouter": "*",
+      "illuminate/database": "*",
+      "filp/whoops": "*",
+      "predis/predis": "*",
+      "nette/mail": "*",
+      "anerg2046/sns_auth":"*",
+      "monolog/monolog": "1.13.1",
+      "danielstjules/stringy": "~2.3",
+      "intervention/image":"*",
+      "jincon/aiivalidator": "dev-master"
+  },
+  "autoload": {
+    "classmap": [
+      "services",
+      "app/controllers",
+      "autoload/class",
+      "app/models"
+    ]
+  },
+  "repositories": {
+    "packagist": {
+      "type": "composer",
+      "url": "https://packagist.phpcomposer.com"
+    }
+  }
+}
